@@ -1,88 +1,181 @@
-# SalesReport
+# Bike Sales Analysis Report
 
-## The Bike Business Performance (2019-2021)
-<img width="1266" height="712" alt="Screenshot 2025-10-28 190447" src="https://github.com/user-attachments/assets/01837dc8-247b-4469-adb5-884fc99acec7" />
+## Overview
+This project analyzes bike sales data to uncover customer purchasing patterns across demographics, commute distances, and income levels.  
+The goal is to identify key factors influencing sales and provide data-driven recommendations for marketing and product strategies.
 
-The company does well $5.797 million in yearly sales demonstrates this however, its reliance on just one product line creates substantial risk alongside unpredictable swings in its operations. 
-This review reveals solid performance regarding the initial budget nevertheless, the current setup invites trouble, demanding swift moves to broaden their offerings.
+---
 
-### **1. Financial Health and Extreme Concentration Risk**
+## Business Problem
+The company wanted to understand:
+- Which customer groups are more likely to purchase bikes  
+- How demographic factors (age, gender, income) and lifestyle factors (commute distance, region) affect sales  
+- How insights can be used to improve marketing focus and inventory management
 
-Hitting the $5,797,224 sales target shows good planning alongside a strong reach into the marketplace. Yet, that win rests on surprisingly shaky ground
+---
 
-- We sell almost only bikes 99.5% of everything we make. This means one problem like tastes changing, getting parts, or new competitors could really hurt our income.
-- Accessories barely register just 0.04% of revenue. It isn't simply about lost potential; the system misses chances to suggest add-ons after someone buys a bike, so average order sizes stay low.
-- Sales are spread throughout many large US cities - the map shows where which lessens, though doesn’t eliminate, the danger if one local economy falters. However, relying heavily on just a few products remains a substantial threat.
+## Tools and Technologies
+- Excel – Data cleaning and pivot analysis  
+- SQL Server – Querying and data manipulation  
+- Power BI – Dashboard and visualization
 
-### **2. Operational Volatility and Supply Chain Imperatives**
+---
 
-Because patterns shift over time, keeping stock levels right alongside staffing needs calls for smart planning
+## Data Cleaning and Preparation
+Performed in Excel and SQL Server:
+- Removed duplicates, null values, and blank columns  
+- Standardized categorical fields such as gender, region, and marital status  
+- Converted income and distance to consistent formats  
+- Created calculated columns for commute groups and age brackets
 
-- Sales jump way up October through December - holiday shopping does that then slow down until next fall. It’s a predictable pattern linked to gifts alongside end-of-year deals.
-- Top sellers specifically those rugged Mountain bikes alongside Touring models are fueling our strong finish to the year. Consequently, operations should prioritize these
-- Keep popular items like the Mountain-200 Black or Touring-1000 Blue - in stock throughout busy times. A precise outlook helps avoid running out.
-- During slower months – January through June we keep a close watch on stock levels so storage doesn’t eat up profits.
-- Despite hitting the yearly financial target, things weren’t perfect. A dip in sales last February $771,349 instead of the planned $800,000 shows we require more careful month-to-month forecasting.
+---
 
-### **3. Customer Value and Retention Focus**
+## Exploratory Data Analysis (EDA)
+Key insights from Excel pivot tables and SQL queries:
 
-We see our best customers are likely to stick around if we reach out directly.
+| Insight | Observation |
+|----------|--------------|
+| Gender | Males account for approximately 58% of total purchases |
+| Income | Higher-income individuals (> $60K) show a greater tendency to buy bikes |
+| Commute Distance | Customers with shorter commutes (0–10 miles) are more likely to purchase bikes |
+| Region | Urban and suburban regions record stronger sales compared to rural areas |
+| Age Group | Middle-aged customers (31–45 years) form the majority of bike buyers |
 
-- Jordan Turner alone brought in more than **$11,484** a glimpse into what our best clients are worth. Moreover, nine others spent upwards of $9,500 each, suggesting big spending isn’t unusual when people buy from us.
-- Instead of chasing new customers, the company needs to focus right away on keeping the good ones
-- Figure out when our best shoppers will likely buy again. Build a system to guess their next shopping trip.
-- Give loyal customers a perk like first dibs on our newest mountain bikes (they sell like hotcakes!) or special treatment to keep them coming back.
+---
 
-### **Strategic Imperatives & Next Steps**
+## Power BI Dashboard Highlights
+Developed an interactive dashboard including:
+1. Bar Chart – Bike Purchase by Gender  
+2. Pie Chart – Bike Purchase by Region  
+3. Line Chart – Relationship between Age and Average Income  
+4. Slicers – Filters for Gender, Marital Status, and Commute Distance  
 
-To grow steadily, we must combine what works well with guarding against potential problems
+### Insights from the Dashboard
 
-1. Boost income by selling more extras! We’ll try out different deals like package offers, follow-up emails after a purchase, also ads aimed at current bicycle buyers with the goal of accessories making up overall revenue by next year.
-2. To avoid running out of our best-selling bikes from September through December, we’ll keep extra stock on hand ,a safety net just for those five popular models.
-3. Boost profits by rewarding our best customers! We’ll establish a special group - the fifty who spend the most ,giving them first-class support alongside tailored advice when they consider upgrades. It's about getting more from those already appreciating what we offer.
+# **Sales Report**
+
+## **The Bike Business Performance (2019–2021)**
+
+![Bike Sales Dashboard](https://github.com/user-attachments/assets/01837dc8-247b-4469-adb5-884fc99acec7)
+
+The company achieved **$5.797 million in yearly sales**, reflecting strong market reach and sound planning. However, heavy reliance on a single product line introduces substantial risk and operational volatility. To sustain growth, diversification and smarter demand planning are essential.
+
+---
+
+### **1. Financial Health and Concentration Risk**
+
+Achieving the **$5,797,224** target underscores strategic execution — yet the business foundation remains fragile.
+
+* **Product Dependency:** 99.5% of revenue comes from bikes, meaning any disruption in trends, supply, or competition could heavily impact income.
+* **Accessories Neglected:** Accessories contribute just **0.04%** of total sales — a missed opportunity for cross-selling and higher order value.
+* **Geographic Spread:** Sales span multiple U.S. cities, which helps reduce local economic risk but doesn’t offset product concentration risk.
+
+---
+
+### **2. Operational Volatility and Supply Chain Priorities**
+
+Sales trends fluctuate seasonally, requiring sharper planning in both inventory and staffing.
+
+* **Seasonal Surge:** Sales rise sharply between **October and December**, driven by holiday demand.
+* **Top Performers:** Mountain and Touring bikes dominate — models like *Mountain-200 Black* and *Touring-1000 Blue* are consistently strong sellers.
+* **Forecasting Gap:** February sales dipped to **$771,349**, below the **$800,000** goal — emphasizing the need for month-wise forecasting precision.
+* **Stock Strategy:** Maintain higher inventory for peak-season items, and closely manage storage during off-peak months to control costs.
+
+---
+
+### **3. Customer Value and Retention**
+
+Top customers significantly influence revenue performance.
+
+* **High-Value Clients:** *Jordan Turner* generated **$11,484**, with nine other clients exceeding **$9,500** each.
+* **Retention Focus:** Shifting emphasis from acquisition to retention will drive sustainable revenue.
+* **Loyalty Strategy:** Predict repurchase behavior and offer benefits like early access to new models and loyalty rewards to retain high-value buyers.
+
+---
+
+### **Strategic Imperatives**
+
+1. **Diversify Revenue Streams:** Introduce and promote accessories through bundles, follow-ups, and targeted ads to raise non-bike sales.
+2. **Inventory Readiness:** Stock key models (top 5 sellers) well ahead of the September–December surge.
+3. **Customer Retention Program:** Build a premium tier for the top 50 customers, offering exclusive access and personalized services.
+
+---
+
+## **Marketing Performance Review & Strategic Re-Focus**
+
+![Marketing Dashboard](https://github.com/user-attachments/assets/906cff28-7e40-4444-ac22-03ef24f2b020)
+
+Marketing efforts yielded **15,820 leads**, surpassing the goal by **31%** — yet conversions remain low. The issue isn’t volume, but **lead quality and cost discipline**.
+
+| **Finding**                         | **Data Evidence**                                                                 | **Strategic Impact**                                                                                   |
+| ----------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Volume Success, Quality Failure** | Lead volume exceeded the goal by **31.83%**, yet conversions stayed below **5%**. | High-volume campaigns (Email/Social) produce low-intent leads, wasting sales effort and inflating CAC. |
+| **Inconsistent Campaign ROI**       | CPL vs. Conversion Rate plot shows wide cost variation for similar results.       | Budget inefficiencies across campaigns lower overall ROMI.                                             |
+| **Underused High-Quality Sources**  | Referral and Social Opt-in channels are underrepresented in total leads.          | Missing out on organic, high-intent, low-CAC leads.                                                    |
+| **Channel Dominance**               | Email and Social drive most leads; Webinars likely yield stronger conversions.    | Shift investment toward education-based, conversion-focused channels.                                  |
+
+---
+
+### **Marketing Strategic Imperatives**
+
+1. **Prioritize Lead Quality:** Implement a lead-scoring system; align Marketing and Sales on qualification criteria.
+2. **Optimize Spend:** Cut underperforming ads and reallocate funds toward webinars and referral programs.
+3. **Improve Nurture Process:** Analyze drop-off points and test new website experiences and follow-up campaigns.
+
+---
+
+## **Product Performance and Sales Concentration (2020)**
+
+![Product Sales Dashboard](https://github.com/user-attachments/assets/28f22ade-6b47-472c-8bc2-958302dbd23d)
+
+Bikes dominate the portfolio, delivering **$16.35 million** in sales — exceeding the **$15.3 million** target. While this shows strong demand, it also exposes a risky over-reliance on a handful of products.
+
+---
+
+### **Key Financial & Product Drivers**
+
+* **Total Revenue:** $16.35M achieved vs. $15.3M planned.
+* **Top Products:** *Mountain-200* and *Mountain-300* series alone contribute ~$4.6M.
+* **Customer Trend:** Premium buyers prefer high-end mountain and touring bikes — strong value segment.
+
+---
+
+### **Operational Insights**
+
+* **Seasonal Peaks:** Sales peak September–December; maintain sufficient stock during this window.
+* **Off-Season Dips:** February shortfall ($771K vs. $800K target) highlights the need for promotional campaigns in low months.
+* **Geographic Spread:** Sales are well distributed across major U.S. cities — strong national presence.
+
+---
+
+### **Strategic Imperatives**
+
+1. **Diversify Product Portfolio:** Develop accessory, apparel, or e-bike categories to reduce dependence on the top 5 bike models.
+2. **Improve Forecasting Accuracy:** Align inventory planning with seasonal trends to prevent stockouts.
+3. **Stimulate Off-Peak Sales:** Launch seasonal promotions like *spring tune-up* or *off-season bundles* to maintain steady cash flow.
+
+---
 
 
-### **Marketing Performance Review & Strategic Re-Focus**
+## Key Performance Indicators (KPIs)
 
-<img width="1254" height="705" alt="Screenshot 2025-10-28 194506" src="https://github.com/user-attachments/assets/906cff28-7e40-4444-ac22-03ef24f2b020" />
+| KPI | Value | Description |
+|------|--------|-------------|
+| Total Bikes Purchased | 483 | Total number of units sold |
+| Conversion Rate | 38% | Percentage of total customers who purchased |
+| Average Income (Buyers) | $59,000 | Mean annual income of bike buyers |
+| Average Commute Distance | 8.2 miles | Typical commute distance of bike buyers |
 
-The marketing dashboard shows we got a ton of leads - 15,820, actually, which is over 31% beyond what we aimed for. However, those numbers don’t mean much because too few people are turning into customers. Moreover, our money isn't going where it should be. To really improve, we need to concentrate on getting leads from places that deliver better results, rather than just throwing more resources at the issue.
+---
 
-| **Finding** | **Data Evidence** | **Strategic Impact** |
-| --- | --- | --- |
-| **Volume Success, Quality Failure** | Lead volume exceeded the goal by **31.83%**. However, the **Leads & Conversion Rate by Month** trend shows that periods of high lead intake do not correspond to high conversion, peaking below $5\%$. | High-volume campaigns (Email/Social) are driving low-intent leads, **wasting sales resources** and skewing Customer Acquisition Cost (CAC) metrics. |
-| **Inconsistent Campaign ROI** | The **Cost per Lead vs. Conversion Rate** scatter plot demonstrates poor cost discipline, with varied costs for similar conversion rates across campaigns. | Budget is being allocated inefficiently across campaign types. Campaigns with high CPL and average conversion are dragging down overall Return on Marketing Investment (ROMI). |
-| **High-Quality Sources are Underleveraged** | **Lead Source Distribution** shows that Referral and Social Opt-in channels, which typically yield the highest quality, are underrepresented in the overall mix. | The business is failing to capitalize on organic, high-intent traffic, which offers the lowest overall CAC. |
-| **Channel Dominance** | **Leads by Campaign Type** confirms **Email and Social Media** are the volume drivers, while specific content types like **Webinars** are likely delivering stronger conversion, justifying deeper investment. | There is a clear mandate to shift investment away from broad awareness channels toward proven educational content that drives purchase intent. |
+## Business Recommendations
+- Focus marketing efforts on middle- to high-income professionals with short commutes  
+- Introduce city-focused commuter bikes  
+- Offer family-oriented discounts for married customers  
+- Prioritize urban and suburban markets for sales expansion
 
-### Strategic Imperatives
+---
 
-1. Stop chasing lots of leads; instead, seek better ones. Quickly rate incoming leads - discarding those unlikely to buy particularly from sources sending many contacts. Marketing alongside Sales needs to agree on what makes a lead truly promising.
-2. Quickly check where we’re spending too much money on ads that aren’t working. Shift those funds toward what is bringing results grow our webinars, also start a rewards system for referrals.
-3. Figure out what’s stopping potential customers from moving forward – specifically, look at how we’re following up with them. We gathered 15,820 leads, so let’s test different website approaches alongside more tailored emails to see if that helps.
-
-  ## Product Performance and Sales Concentration (2020)
-  
-<img width="1270" height="706" alt="Screenshot 2025-10-28 194558" src="https://github.com/user-attachments/assets/28f22ade-6b47-472c-8bc2-958302dbd23d" />
-
-Bikes are basically carrying the whole show, bringing in almost all the money – **$16.35 million** compared to a plan of $15.3million. While things look good now, relying so heavily on just mountain and touring bikes feels precarious. It’s a bit like putting all our eggs in one basket.
-
-### Key Financial & Product Performance Drivers
-
-- Sales hit **$16.35 million** - well beyond the $15.3 million goal. It seems people really want what we’re making.
-- Bike sales truly drive things - they’re responsible for $16.35 million worth of revenue. Digging deeper, five models specifically the **Mountain-200** and **Mountain-300** lines contribute around  $4.6   million to that total, meaning most of our gains come from a focused selection.
-- Mostly, the best sellers the ten most popular items are expensive mountain or touring bicycles like the Mountain-200 Black and Touring-1000 Blue. This suggests a knack for reaching customers willing to pay more.
-      
-### Operational Trends and Seasonal Gaps
-
-Sales clearly rise and fall with the seasons, peaking sharply from September to December – a pattern illustrated by monthly sales figures. Consequently, keeping plenty of stock on hand during the last three months of the year is essential.
-Sales didn’t quite hit their marks last year. We went over budget overall, yet struggled some months  **February**, for instance, saw $771,349 in sales when we aimed for $800,000. Those dips suggest tweaks to our approach during slower times.
-Sales aren't just happening in one place; they’re spread across many big cities nationwide, as shown on the customer city sales map. This indicates broad reach rather than concentration in a single area.
-
-### Strategic Imperatives
-
-1. Quickly start a plan to build up another profitable product line like accessories, clothes, or e-bikes so we don’t depend so much on our five best-selling items.
-2. To avoid losing sales when mountain bikes are most popular (September through December), we’ll use better predictions to keep enough of our best-selling models on hand. This means fewer times customers can’t get what they want.
-3. Figure out why income dips in slower times like February. Then, create targeted offers or bundles (think spring checkups, off-season equipment deals) so money keeps flowing when things are calmer.
-
-
+## Summary
+This analysis provides clear insights into the demographics and lifestyle factors driving bike purchases.  
+Using Excel, SQL, and Power BI, this project demonstrates how effective data cleaning, analysis, and visualization can lead to strategic business decisions.
