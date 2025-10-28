@@ -103,7 +103,7 @@ It consists of **dimension tables** that provide descriptive attributes and **fa
 
 ### **4.1 Data Model Overview**
 
-![Data Model](c5cc6477-fe38-4068-b54e-26d4fe29bba2.png)
+![Data Model] <img width="1009" height="740" alt="Screenshot 2025-10-28 203543" src="https://github.com/user-attachments/assets/62be8c76-792c-4664-98cd-211f4ca279c4" />
 
 ---
 
