@@ -44,7 +44,7 @@ To grow steadily, we must combine what works well with guarding again
 
 ### **Marketing Performance Review & Strategic Re-Focus**
 
-<img width="1260" height="709" alt="Screenshot 2025-10-28 190504" src="https://github.com/user-attachments/assets/5719940e-a05f-4ef2-9ea1-93d31bbe7d9e" />
+<img width="1254" height="705" alt="Screenshot 2025-10-28 194506" src="https://github.com/user-attachments/assets/906cff28-7e40-4444-ac22-03ef24f2b020" />
 
 The marketing dashboard shows we got a ton of leads - 15,820, actually, which is over 31% beyond what we aimed for. However, those numbers don’t mean much because too few people are turning into customers. Moreover, our money isn't going where it should be. To really improve, we need to concentrate on getting leads from places that deliver better results, rather than just throwing more resources at the issue.
 
@@ -63,7 +63,7 @@ The marketing dashboard shows we got a ton of leads - 15,820, actually, which is
 
   ## Product Performance and Sales Concentration (2020)
   
-<img width="1265" height="719" alt="Screenshot 2025-10-28 190516" src="https://github.com/user-attachments/assets/680a4309-9ae7-4be2-8c1d-4b5c955c969f" />
+<img width="1270" height="706" alt="Screenshot 2025-10-28 194558" src="https://github.com/user-attachments/assets/28f22ade-6b47-472c-8bc2-958302dbd23d" />
 
 Bikes are basically carrying the whole show, bringing in almost all the money – **$16.35 million** compared to a plan of $15.3million. While things look good now, relying so heavily on just mountain and touring bikes feels precarious. It’s a bit like putting all our eggs in one basket.
 
