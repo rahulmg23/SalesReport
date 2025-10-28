@@ -146,7 +146,6 @@ It consists of **dimension tables** that provide descriptive attributes and **fa
 - Ensures **data normalization** and reduces redundancy for better performance.
 
 ---
----
 
 ### Insights from the Dashboard
 
