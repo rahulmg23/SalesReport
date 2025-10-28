@@ -6,11 +6,55 @@ The goal is to identify key factors influencing sales and provide data-driven re
 
 ---
 
-## Business Problem
-The company wanted to understand:
-- Which customer groups are more likely to purchase bikes  
-- How demographic factors (age, gender, income) and lifestyle factors (commute distance, region) affect sales  
-- How insights can be used to improve marketing focus and inventory management
+## ** Business Objective**
+
+The goal is to transform existing static Excel sales reports into **interactive Power BI dashboards** to:
+
+- Monitor **Internet Sales performance** over time  
+- Identify **top-selling products** and **key customers**  
+- Compare **actual sales vs. budget targets**  
+- Provide **filtering options** for customers, products, and salespersons  
+- Enable **data-driven decision-making** through visual insights  
+
+---
+
+## **3. Business Problems and Challenges**
+
+### **3.1 Reporting Inefficiencies**
+- Manual Excel-based reporting is **time-consuming** and **error-prone**.  
+- Data from multiple sources (CRM, website, budget sheets) is **not unified**.  
+- Sales managers spend hours compiling reports instead of analyzing performance.
+
+---
+
+### **3.2 Lack of Real-Time Visibility**
+- Sales data is only updated **monthly or weekly**.  
+- No automated **daily refresh process** for performance tracking.  
+
+---
+
+### **3.3 Limited Analytical Insights**
+- Reports provide totals but **no trend analysis or product segmentation**.  
+- Underperforming areas are difficult to identify quickly.  
+- No **comparative historical data visualization** for performance review.  
+
+---
+
+### **3.4 Customer and Product Blind Spots**
+- Sales representatives can’t easily focus on their **assigned customers or products**.  
+- No segmentation or insight into **repeat buyers vs. inactive customers**.  
+
+---
+
+### **3.5 Budget Comparison Gaps**
+- Budget data exists in Excel but lacks **automated variance analysis**.  
+- Decision-makers can’t see how **actuals compare with planned targets** in real time.  
+
+---
+
+### **3.6 Delayed Decision-Making**
+- Management often receives **outdated reports**.  
+- Lack of interactive **visualizations** makes it hard to spot trends or exceptions promptly.  
 
 ---
 
@@ -48,7 +92,61 @@ Developed an interactive dashboard including:
 1. Bar Chart – Bike Purchase by Gender  
 2. Pie Chart – Bike Purchase by Region  
 3. Line Chart – Relationship between Age and Average Income  
-4. Slicers – Filters for Gender, Marital Status, and Commute Distance  
+4. Slicers – Filters for Gender, Marital Status, and Commute Distance
+
+---
+
+## **4. Data Model and Schema Design**
+
+The data model follows a **Star Schema** architecture, designed for efficient reporting and easy analysis in Power BI.  
+It consists of **dimension tables** that provide descriptive attributes and **fact tables** that store measurable business data.
+
+### **4.1 Data Model Overview**
+
+![Data Model](c5cc6477-fe38-4068-b54e-26d4fe29bba2.png)
+
+---
+
+### **4.2 Tables Description**
+
+#### **Dimension Tables (DIM)**
+| Table | Description |
+|--------|--------------|
+| **DIM_Calendar** | Stores all date-related fields used for time-based analysis (Day, Month, Quarter, Year). |
+| **DIM_Customers** | Contains customer details such as Name, City, Gender, and Date of First Purchase. |
+| **DIM_Products** | Holds product-related information including Category, Color, Line, Model Name, and Size. |
+
+#### **Fact Tables (FACT)**
+| Table | Description |
+|--------|--------------|
+| **FACT_InternetSales** | Main transactional table capturing each sales record with metrics like Sales Amount, Order Date, and Customer/Product keys. |
+| **FACT_Budget** | Contains budgeted values for each period to enable comparison against actual sales. |
+
+#### **Analysis Metrics**
+| Table | Description |
+|--------|--------------|
+| **Analysis Metrics** | Aggregated measures such as Sales and Budget to facilitate KPI tracking and performance measurement. |
+
+---
+
+### **4.3 Relationships**
+
+- **DIM_Calendar** connects to both `FACT_InternetSales` and `FACT_Budget` using the `DateKey` field.  
+- **DIM_Customers** connects to `FACT_InternetSales` using `CustomerKey`.  
+- **DIM_Products** connects to `FACT_InternetSales` using `ProductKey`.  
+- Relationships are **one-to-many (1:* )**, ensuring proper data filtering and aggregation in Power BI.
+
+---
+
+### **4.4 Model Highlights**
+
+- Optimized for **time intelligence calculations** (e.g., Year-to-Date, Month-over-Month).  
+- Enables **budget vs. actual sales variance analysis**.  
+- Supports **dynamic filtering** by Product, Customer, and Time Period.  
+- Ensures **data normalization** and reduces redundancy for better performance.
+
+---
+---
 
 ### Insights from the Dashboard
 
