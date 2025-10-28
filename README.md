@@ -38,8 +38,8 @@ We see our best customers are likely to stick around if we reach ou
 To grow steadily, we must combine what works well with guarding against potential problems
 
 1. Boost income by selling more extras! We’ll try out different deals like package offers, follow-up emails after a purchase, also ads aimed at current bicycle buyers with the goal of accessories making up overall revenue by next year.
-2. To avoid running out of our best-selling bikes from September through December, we’ll keep extra stock on hand - a safety net just for those five popular models.
-3. Boost profits by rewarding our best customers! We’ll establish a special group - the fifty who spend the most - giving them first-class support alongside tailored advice when they consider upgrades. It's about getting more from those already appreciating what we offer.
+2. To avoid running out of our best-selling bikes from September through December, we’ll keep extra stock on hand ,a safety net just for those five popular models.
+3. Boost profits by rewarding our best customers! We’ll establish a special group - the fifty who spend the most ,giving them first-class support alongside tailored advice when they consider upgrades. It's about getting more from those already appreciating what we offer.
 
 
 ### **Marketing Performance Review & Strategic Re-Focus**
@@ -75,7 +75,7 @@ Bikes are basically carrying the whole show, bringing in almost all t
       
 ### Operational Trends and Seasonal Gaps
 
-Sales clearly rise and fall with the seasons, peaking sharply from September to December – a pattern illustrated by monthly sales figures. Consequently, keeping plenty of stock on hand during the last three months of the year is essential.
+Sales clearly rise and fall with the seasons, peaking sharply from September to December – a pattern illustrated by monthly sales figures. Consequently, keeping plenty of stock on hand during the last three months of the year is essential.
 Sales didn’t quite hit their marks last year. We went over budget overall, yet struggled some months  **February**, for instance, saw $771,349 in sales when we aimed for $800,000. Those dips suggest tweaks to our approach during slower times.
 Sales aren't just happening in one place; they’re spread across many big cities nationwide, as shown on the customer city sales map. This indicates broad reach rather than concentration in a single area.
 
