@@ -6,7 +6,7 @@ The goal is to identify key factors influencing sales and provide data-driven re
 
 ---
 
-## ** Business Objective**
+## **Business Objective**
 
 The goal is to transform existing static Excel sales reports into **interactive Power BI dashboards** to:
 
