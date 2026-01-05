@@ -2,6 +2,7 @@
 
 ## Overview
 This project analyzes bike sales data to uncover customer purchasing patterns across demographics, commute distances, and income levels.  
+
 The goal is to identify key factors influencing sales and provide data-driven recommendations for marketing and product strategies.
 
 ---
