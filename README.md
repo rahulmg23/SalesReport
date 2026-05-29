@@ -1,4 +1,4 @@
-# Bike Sales Analysis Report
+#  Bike Sales Analysis Report
 
 ## Overview
 This project analyzes bike sales data to uncover customer purchasing patterns across demographics , commute distances and income levels.  
